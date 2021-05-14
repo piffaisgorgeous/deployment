@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pharmacy</title>
+    <script type="text/javascript" src="medicine.js"></script>
+</head>
+<body>
+<div id="myform">
+<center><h1>PIFFA'S PHARMACY</h1>
+<b>Input Medicine</b>
+<table>
+    <tr>
+        <td>Brand Name</td>
+        <td><input type="text" id="bname"></td>
+    </tr>
+    <tr>
+        <td>Generic Name</td>
+        <td><input type="text" id="gname"></td>
+    </tr>
+    <tr>
+        <td>Stock</td>
+        <td><input type="number" id="stock"></td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td><input type="number" id="price">
+        <input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+</center>
+<center>
+<div id="mydata">
+<h4>Medicine in the Pharmacy</h4>
+<table id="medicine"  border="1" cellpadding="2">
+    <tr>
+        <td><b>Brand Name</b></td>
+        <td><b>Generic Name</b></td>
+        <td><b>Stock</b></td>
+        <td><b>Price</b></td>
+    </tr>
+</table>
+&nbsp;
+
+<br>
+<h4>PURCHASING AREA</h4>
+<br>
+<label>Input the Medicine to Purchase</label>
+<input type='text' id='MedToPurchase'>
+<br>
+<label>Quantity</label>
+<input type='number' id='QuantToPurchase'>
+<br>
+<label></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="purchase()">Purchase</button>
+<br>
+<label>Total Amount of Purchase in Pesos:</label>
+<input type="number" id='amount'>
+<br>
+<label></label>
+<button onclick='clearAmount()'>OK</button>
+<br>
+<h4>SELLING AREA</h4>
+<br>
+<label>Input the Medicine to Sell</label>
+<input type='text' id='MedToSell'>
+<br>
+<label>Quantity</label>
+<input type='number' id='QuantToSell'>
+<br>
+<label></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="sell()">Sell</button>
+<br>
+<b>EDITING AREA</b>
+<br>
+<label>Input the Medicine to Edit (Brand Name)</label>
+<input type='text' id='MedToEdit'>
+<br>
+<b>Replace the value needed to edit</b>
+<br>
+<label>Brand Name</label>
+<input type='text' id='BnameToEdit'>
+<br>
+<label>Generic Name</label>
+<input type='text' id='GnameToEdit'>
+<br>
+<label>Stock </label>
+<input type='number' id='StockToEdit'>
+<br>
+<label>Price</label>
+<input type='number' id='PriceToEdit'>
+<br>
+<label></label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button onclick="edit()">Edit</button>
+</div>
+</center>
+</body>
+</html>
